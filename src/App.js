@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, useState } from "react";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  const [val, setVal] = useState(0);
+
+  const increase = () => {
+    if (val < 1000) {
+      setVal((val) => val + 1);
+    }
+  };
+
+  const decrease = () => {
+    if (val > 0) {
+      setVal((val) => val - 1);
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        <button className="btn1" onClick={decrease}>
+          -
+        </button>
+      }
+      {<p className="op">{val}</p>}
+      {
+        <button className="btn2" onClick={increase}>
+          +
+        </button>
+      }
     </div>
   );
 }
-
-export default App;

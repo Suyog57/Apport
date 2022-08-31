@@ -1,0 +1,54 @@
+/*@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Avenir.woff") format("woff"),
+      url("../fonts/Avenir.ttf") format("truetype"),
+      url("../fonts/Avenir.svg#Avenir") format("svg");
+  }*/
+  * {
+    font-family: "Avenir", Helvetica, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .op {
+    font-weight: 700;
+    font-size: 23px;
+    color: #b24242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 54px;
+    background-color: #fbe8e8;
+    border: 1px solid #b24242;
+  }
+  
+  .btn1 {
+    font-size: 21px;
+    font-weight: 500;
+    height: 56px;
+    width: 60px;
+    color: #b24242;
+    background-color: white;
+    border: 1px solid #b24242;
+    border-radius: 8px 0px 0px 8px;
+  }
+  
+  .btn2 {
+    font-size: 21px;
+    font-weight: 500;
+    height: 56px;
+    width: 60px;
+    color: white;
+    border: none;
+    background-color: #b24242;
+    border-radius: 0px 8px 8px 0px;
+  }
+  
